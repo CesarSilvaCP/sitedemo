@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to my WebSite!</title>
+    
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Bootstrap JS, Popper JS jQuery link -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- Video Modal jS -->
+    <script src="assets/js/videomodal.js"></script>
+    <!-- Font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Slider lib link -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+</head>
+<body>
+
+    <section id="nav-bar">
+        <!-- Just an image -->
+        <nav class="navbar navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img class="image-logo" src="assets/newlogo.svg" alt="" width="120" height="30">
+                </a>
+            </div>
+        </nav>
+        <!-- Just an image -->
+        <nav class="navbar navbar-light nav-2" style="background-color: #FFFC00;">
+            <div class="container justify-content-md-center">
+            <b class="text-cta">
+                I LOVE THIS PLANET!
+            </b>
+            <button class="button button4">CLICK HERE!</button>
+            <!-- <input class="btn btn-primary btn-cta rounded-10" type="button" value="CLICK HERE"> -->
+            </div>
+        </nav>
+    </section>
+
+    <!--------------------- banner section ------------------------->
+
+    <section id="banner-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <p  class="txt-line-1">That’s not soon enough!</p>
+                    <h2 class="txt-line-big">THERE’S ONLY ONE<br> COURSE OF ACTION</h2>
+                    <p  class="txt-line-1">I don't know what you did, Fry,<br> but once again, you screwed up!</p>
+                    <h3 class="txt-line-md">BUT YOU MAY HAVE TO!</h3>
+                </div>
+                <div class="col-md-5 txt-center">
+                    <img type="button" class="video-play-art video-btn" 
+                    src="assets/video-play.png" alt="" width="300" height="200"  class="btn btn-primary video-btn" 
+                    data-toggle="modal" data-src="https://player.vimeo.com/video/58385453?badge=0" data-target="#myModal">
+                    <script>
+                        $(document).ready(function() {
+                            // Gets the video src from the data-src on each button
+                            var $videoSrc;  
+                            $('.video-btn').click(function() {
+                                $videoSrc = $(this).data( "src" );
+                            });
+                            console.log($videoSrc);                        
+                            
+                            // when the modal is opened autoplay it  
+                            $('#myModal').on('shown.bs.modal', function (e) {
+                                
+                            // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+                            $("#video").attr('src',$videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0" ); 
+                            })
+
+                            // stop playing the youtube video when I close the modal
+                            $('#myModal').on('hide.bs.modal', function (e) {
+                                // a poor man's stop video
+                                $("#video").attr('src',$videoSrc); 
+                            }) 
+                            // document ready  
+                            });
+                    </script>
+                    <!--------------------- modal section ------------------------->
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>        
+                                    <!-- 16:9 aspect ratio -->
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <button class="button-shadow button5">CLICK HERE!</button>
+            </div>
+        </div>
+    </section>
+
+    <!--------------------- services section ------------------------->
+
+    <section id="services-section">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4 services">
+                    <img src="assets/icon/icon1.svg" class="services-icon" alt="">
+                    <h4 class="">Headline for icon<br> number one</h4>
+                    <p class="">Text below icon one, text<br> below icon one, text below</p>
+                </div>
+                <div class="col-md-4 services">
+                    <img src="assets/icon/icon2.svg" class="services-icon" alt="">
+                    <h4 class="">Headline for icon<br> number two</h4>
+                    <p class="">Text below icon one, text<br> below icon one, text below</p>
+                </div>
+                <div class="col-md-4 services">
+                    <img src="assets/icon/icon3.svg" class="services-icon" alt="">
+                    <h4 class="">Headline for icon<br> number three</h4>
+                    <p class="">Text below icon one, text<br> below icon one, text below</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--------------------- slider section ------------------------->
+
+    <section id="slider-section">
+        <div class="container">
+            <div class="col-sm">
+                <div class="wrapper">
+                    <div class="carousel owl-carousel">
+                      <div class="card card-1"></div>
+                      <div class="card card-2"></div>
+                      <div class="card card-3"></div>
+                      <div class="card card-4"></div>
+                      <div class="card card-5"></div>
+                    </div>
+                  </div>
+                <p class="text-style">
+                    This opera’s as lousy as it is brilliant! Your lyrics <span class="blue-text">lack subtlety</span>. You can’t just have<br> 
+                    your characters announce how they feel. That makes me feel angry!<br> 
+                    Hello, little man.
+                </p>
+                <script>
+                    $(".carousel").owlCarousel({
+                      margin: 15,
+                      loop: true,
+                      autoplay: true,
+                      autoplayTimeout: 2000,
+                      autoplayHoverPause: true,
+                      responsive: {
+                        0:{
+                          items:1,
+                          nav: false
+                        },
+                        600:{
+                          items:2,
+                          nav: false
+                        },
+                        1000:{
+                          items:3,
+                          nav: false
+                        }
+                      }
+                    });
+                  </script>
+            </div>
+        </div>
+    </section>  
+</body>
+</html>

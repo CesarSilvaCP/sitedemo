@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ *:focus {
+   outline: 0;
+ }
+ option:focus{
+  outline:none;
+  border:none;
+}
+body{
+    font-family: sans-serif;
+    padding: 0;
+}
+#nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar{
+    padding: .1% !important;
+}
+.text-cta{
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #0157BA;
+}
+.btn-cta{
+    margin-left: 2%;
+    width: 10%;
+}
+
+.button {
+    background-color: #FF6600;
+    border: none;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    margin-left: 1%;
+    width: 15%;
+    outline: 0;
+  }
+  .button4 {border-radius: 12px;}
+
+  /* --------------------- banner section ------------------------- */
+
+  #banner-section{
+    background-image: url("../bg-art.png");
+    /* background-color: #cccccc; */
+    background-position-y: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+    padding-top: 4%;
+    padding-bottom: 1%;
+    text-align: center;
+  }
+.body{
+    
+}
+.txt-line-1{
+    color: white;
+    margin-bottom: -1%;
+    margin-left: 35%;
+    text-align: center;
+    font-size: 1.8vh;
+    font-weight: 100;
+}
+.txt-line-big{
+    color: #FFFC00;
+    margin-top: 1%;
+    margin-bottom: -1%;
+    margin-left: 35%;
+    text-align: center;
+    font-size: 3vh;    
+}
+.txt-line-md{
+    color: #FFFC00;
+    margin-top: 1%;
+    margin-left: 35%;
+    text-align: center;
+    font-size: 2.2vh;
+    margin-bottom: 5%;
+}
+.video-play-art{
+    height: 18vh;
+    margin-left: -38%;
+    margin-top: -3%;
+}
+
+.button-shadow {
+    background-color: #FF6600;
+    border: none;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 22px;
+    margin: 50px 10px;
+    margin-left: 1%;
+    width: 25%;
+    box-shadow: 10px 10px 8px #02265c57;
+    font-weight: 250;
+  }
+  .button5 {border-radius: 30px;}
+
+    /* --------------------- services section ------------------------- */
+
+#services-section{
+    padding: 80px 0;
+}
+.services-icon{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.services{
+    padding: 20px;
+}
+.services::before{
+    content: '';
+    background: #EAF7FF;
+    height: 250px;
+    width: 2px;
+    margin-left: auto;
+    margin-bottom: -70%;
+    display: block;
+    padding-bottom: 70%;
+}
+
+    /* --------------------- slider section ------------------------- */
+
+#slider-section{
+    background-color: #EAF7FF;
+    background-position-y: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+    padding-top: 4%;
+    padding-bottom: 1%;
+    text-align: center;
+  }
+.text-style{
+    margin-top: 2%;
+}
+.blue-text{
+  color: #0157BA;
+  font-weight: 600;
+}
+  .wrapper{
+    width: 100%;
+  }
+  .carousel{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 30px;
+  }
+  .carousel .card{
+    margin: 0px 0;
+    height: 300px;
+    width: 250px;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+  }
+  .carousel .card-1{
+    background-image: url('../profile/liu-wen.jpg');
+    background-position: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .carousel .card-2{
+    background-image: url('../profile/lorena-s.jpeg');
+    background-position: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .carousel .card-3{
+    background-image: url('../profile/carolin-loosen.jpg');
+    background-position: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .carousel .card-4{
+    background-image: url('../profile/model.jpeg');
+    background-position: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .carousel .card-5{
+    background-image: url('../profile/liu-wen.jpg');
+    background-position: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .owl-dots{
+    text-align: center;
+    margin-top: 40px;
+  }
+  .owl-dot{
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    outline: none;
+    border-radius: 14px;
+    border: 1px solid #0072bc!important;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+  }
+  .owl-dot.active,
+  .owl-dot:hover{
+    background: #0072bc!important;
+  }
+  
+    /* --------------------- video modal section ------------------------- */
+  .modal-dialog {
+    max-width: 800px;
+    margin: 30px auto;
+  }
+  .modal-body {
+  position:relative;
+  padding:0px;
+  }
+  .close {
+  position:absolute;
+  right:-30px;
+  top:0;
+  z-index:999;
+  font-size:2rem;
+  font-weight: normal;
+  color:#fff;
+  opacity:1;
+  }
+
+
+      /* --------------------- Media Query ------------------------- */
+      @media screen and (max-width: 1000px) {
+        .button {
+          width: 50%;
+        }
+        .txt-line-1{
+          margin-top: 5%;
+          margin-bottom: 0;
+          margin-left: auto;
+          text-align: center;
+          font-size: 1.8vh;
+          font-weight: 100;
+        }
+        .txt-line-big{
+          margin-top: 1%;
+          margin-bottom: -5%;
+          margin-left: auto;
+          text-align: center;
+          font-size: 3vh;    
+        }
+        .txt-line-md{
+            margin-top: 1%;
+            margin-left: auto;
+            text-align: center;
+            font-size: 2.2vh;
+            margin-bottom: 0;
+        }
+        .video-play-art{
+            height: 20vh;
+            width: 35vh;
+            margin-left: auto;
+            margin-top: 5%;
+        }
+        .button-shadow {
+          padding: 5px;
+          /* text-align: center; */
+          /* text-decoration: none; */
+          /* display: inline-block; */
+          font-size: 22px;
+          margin: 50px 10px;
+          margin-left: 1%;
+          width: 100%;
+          box-shadow: 10px 10px 8px #02265c57;
+          font-weight: 250;
+        }
+        .button5 {border-radius: 30px;}
+        .services::before{
+          content: none;          
+        }
+        .image-logo{          
+          margin-left: 10rem;
+        }
+        #banner-section{
+          background-image: url("../bg-art.png");
+          /* background-color: #cccccc; */
+          background-position-y: 100%;
+          background-size: cover;
+          background-repeat: no-repeat;
+          z-index: 0;
+          padding-top: 4%;
+          padding-bottom: 1%;
+          text-align: center;
+        }
+      }
